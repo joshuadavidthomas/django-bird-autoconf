@@ -223,7 +223,7 @@ def version(
         "--title",
         title,
         "--body",
-        changes,
+        changes or " ",
     )
 
 
