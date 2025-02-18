@@ -18,6 +18,8 @@ and this project attempts to adhere to [Semantic Versioning](https://semver.org/
 
 ## [Unreleased]
 
+## [0.1.0]
+
 ### Added
 
 - Added autoconfiguration of a project using django-bird, copied from the current implementation in the core library.
@@ -26,4 +28,5 @@ and this project attempts to adhere to [Semantic Versioning](https://semver.org/
 
 - Josh Thomas <josh@joshthomas.dev> (maintainer)
 
-[unreleased]: https://github.com/joshuadavidthomas/django-bird/compare/v0.0.0...HEAD
+[unreleased]: https://github.com/joshuadavidthomas/django-bird-autoconf/compare/v0.1.0...HEAD
+[0.1.0]: https://github.com/joshuadavidthomas/django-bird-autoconf/releases/tag/v0.1.0
