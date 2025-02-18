@@ -168,15 +168,15 @@ wheels = [
 
 [[package]]
 name = "django-bird"
-version = "0.16.1"
+version = "0.16.2"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "django" },
     { name = "pluggy" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/ae/5e/9b03025fba267184dcfa37c578540a53d5c6f9d91ad1397d0ebf4493a173/django_bird-0.16.1.tar.gz", hash = "sha256:7a74a515f5cb186bb2808d44f8567ed22de52e80287d85fc7c52be55ab44c9e8", size = 135275 }
+sdist = { url = "https://files.pythonhosted.org/packages/d2/f9/fc4c377bdee7b757f23923b8423208e35928c2fa29ca366cd3862c514015/django_bird-0.16.2.tar.gz", hash = "sha256:85ce757e1408999a71bde58cdce767c6bce8db251f3f72019606c2158598ba1e", size = 135548 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/9c/ee/dda8a7a888c568de0dcf9902af8fa25a99f6642967d90417be93fbf6ef84/django_bird-0.16.1-py3-none-any.whl", hash = "sha256:0ccf7bda347c4c7a9f9a363a40812d8436d66da692fbbfb56434f1fa774033b7", size = 24064 },
+    { url = "https://files.pythonhosted.org/packages/95/d4/3168e3336f60d96288c63a2c8b9c46d92d394ce5fb6662b4eaeb62b27a39/django_bird-0.16.2-py3-none-any.whl", hash = "sha256:c0e5b7e20c7509fde95251a55c8c06a843cea90db11ed31103174274b1645d0b", size = 24250 },
 ]
 
 [[package]]
@@ -204,7 +204,7 @@ types = [
 ]
 
 [package.metadata]
-requires-dist = [{ name = "django-bird", specifier = ">=0.16.1" }]
+requires-dist = [{ name = "django-bird", specifier = ">=0.16.2" }]
 
 [package.metadata.requires-dev]
 dev = [
