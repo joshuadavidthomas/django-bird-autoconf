@@ -34,7 +34,13 @@ repos:
       - id: pretty-format-toml
         args: [--autofix]
 
-  - repo: https://github.com/abravalheri/validate-pyproject
-    rev: v0.23
-    hooks:
-      - id: validate-pyproject
+  # currently errors with the entry-points:
+  # [ERROR] `project.entry-points` keys must be named by:
+  #   {format: 'python-entrypoint-group'}
+  # but how it's setup in this project's `pyproject.toml` is how the docs say it should be setup:
+  # https://setuptools.pypa.io/en/latest/userguide/entry_point.html#entry-points-for-plugins
+  # - repo: https://github.com/abravalheri/validate-pyproject
+  #   rev: v0.23
+  #   hooks:
+  #     - id: validate-pyproject
+  #       additional_dependencies: ["validate-pyproject-schema-store[all]"]
