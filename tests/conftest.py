@@ -29,6 +29,10 @@ TEST_SETTINGS = {
             "NAME": ":memory:",
         }
     },
+    "DJANGO_BIRD": {
+        # TODO: Remove once deprecated setting is removed
+        "ENABLE_AUTO_CONFIG": False,
+    },
     "EMAIL_BACKEND": "django.core.mail.backends.locmem.EmailBackend",
     "INSTALLED_APPS": [
         "django_bird",
@@ -43,7 +47,6 @@ TEST_SETTINGS = {
     "STATICFILES_FINDERS": [
         "django.contrib.staticfiles.finders.FileSystemFinder",
         "django.contrib.staticfiles.finders.AppDirectoriesFinder",
-        "django_bird.staticfiles.BirdAssetFinder",
     ],
     "TEMPLATES": [
         {
@@ -54,7 +57,6 @@ TEST_SETTINGS = {
             "OPTIONS": {
                 "builtins": [
                     "django.template.defaulttags",
-                    "django_bird.templatetags.django_bird",
                 ],
                 "loaders": [
                     "django.template.loaders.filesystem.Loader",

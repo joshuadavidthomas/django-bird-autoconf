@@ -45,7 +45,7 @@ readme = "README.md"
 requires-python = ">=3.10"
 version = "0.1.0"
 
-[project.entry-points.django-bird]
+[project.entry-points.bird]
 autoconf = "django_bird_autoconf.plugin"
 
 [project.urls]
