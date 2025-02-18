@@ -13,7 +13,7 @@ from django_bird.conf import app_settings
 
 
 @hookimpl
-def ready():
+def pre_ready():
     configurator = AutoConfigurator(app_settings)
     configurator.autoconfigure()
 
