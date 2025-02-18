@@ -1,6 +1,6 @@
 [build-system]
-requires = ["hatchling"]
 build-backend = "hatchling.build"
+requires = ["hatchling"]
 
 [dependency-groups]
 dev = [
@@ -11,12 +11,12 @@ dev = [
   "pytest-django>=4.10.0",
   "pytest-randomly>=3.16.0",
   "pytest-xdist>=3.6.1",
-  "ruff>=0.9.6",
+  "ruff>=0.9.6"
 ]
 types = ["basedpyright>=1.27.1", "django-stubs>=5.1.3"]
 
 [project]
-authors = [{ name = "Josh", email = "josh@joshthomas.dev" }]
+authors = [{name = "Josh", email = "josh@joshthomas.dev"}]
 classifiers = [
   "Development Status :: 4 - Beta",
   "Environment :: Plugins",
@@ -35,15 +35,15 @@ classifiers = [
   "Programming Language :: Python :: 3.11",
   "Programming Language :: Python :: 3.12",
   "Programming Language :: Python :: 3.13",
-  "Programming Language :: Python :: Implementation :: CPython",
+  "Programming Language :: Python :: Implementation :: CPython"
 ]
 dependencies = ["django-bird>=0.16.1"]
 description = "django-bird plugin for autoconfiguring your Django project"
-license = { file = "LICENSE" }
+license = {file = "LICENSE"}
 name = "django-bird-autoconf"
 readme = "README.md"
 requires-python = ">=3.10"
-version = "0.0.0"
+version = "0.1.0"
 
 [project.entry-points.django-bird]
 autoconf = "django_bird_autoconf.plugin"
@@ -63,14 +63,14 @@ reportUnusedCallResult = false
 [tool.bumpver]
 commit = true
 commit_message = ":bookmark: bump version {old_version} -> {new_version}"
-current_version = "0.0.0"
-push = false                                                              # set to false for CI
+current_version = "0.1.0"
+push = false  # set to false for CI
 tag = false
 version_pattern = "MAJOR.MINOR.PATCH[PYTAGNUM]"
 
 [tool.bumpver.file_patterns]
-"tests/test_version.py" = ['assert __version__ == "{version}"']
 "pyproject.toml" = ['version = "{version}"']
+"tests/test_version.py" = ['assert __version__ == "{version}"']
 
 [tool.hatch.build]
 exclude = [".*", "Justfile"]
@@ -106,7 +106,7 @@ exclude = [
   "dist",
   "migrations",
   "node_modules",
-  "venv",
+  "venv"
 ]
 extend-include = ["*.pyi?"]
 indent-width = 4
@@ -128,13 +128,13 @@ quote-style = "double"
 dummy-variable-rgx = "^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$"
 # Allow autofix for all enabled rules (when `--fix`) is provided.
 fixable = ["A", "B", "C", "D", "E", "F", "I"]
-ignore = ["E501", "E741"] # temporary
+ignore = ["E501", "E741"]  # temporary
 select = [
   "B",  # flake8-bugbear
   "E",  # Pycodestyle
   "F",  # Pyflakes
   "I",  # isort
-  "UP", # pyupgrade
+  "UP"  # pyupgrade
 ]
 unfixable = []
 
