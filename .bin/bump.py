@@ -145,7 +145,7 @@ def update_changelog(new_version: str) -> None:
 
 
 def update_uv_lock(new_version: str) -> None:
-    run("uv", "lock")
+    run("uv", "lock", "--no-cache")
 
     changes = run("git", "status", "--porcelain", force_run=True)
     if "uv.lock" not in changes:
