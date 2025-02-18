@@ -37,7 +37,7 @@ classifiers = [
   "Programming Language :: Python :: 3.13",
   "Programming Language :: Python :: Implementation :: CPython"
 ]
-dependencies = ["django-bird>=0.16.1"]
+dependencies = ["django-bird>=0.16.2"]
 description = "django-bird plugin for autoconfiguring your Django project"
 license = {file = "LICENSE"}
 name = "django-bird-autoconf"
