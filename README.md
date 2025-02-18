@@ -13,7 +13,7 @@
 
 - Python 3.10, 3.11, 3.12, 3.13
 - Django 4.2, 5.0, 5.1, 5.2
-- django-bird >= 0.16.1
+- django-bird >= 0.16.2
 
 ## Installation
 

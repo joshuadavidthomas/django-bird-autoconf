@@ -18,6 +18,11 @@ and this project attempts to adhere to [Semantic Versioning](https://semver.org/
 
 ## [Unreleased]
 
+### Changed
+
+- Bumped the minimum version of django-bird to v0.16.2.
+- Changed hook implementation to use new `pre_ready` hook, in order to setup project settings before any template scanning or other internal initialization happens in core library.
+
 ## [0.1.0]
 
 ### Added
